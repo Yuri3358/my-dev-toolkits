@@ -2,4 +2,4 @@ const headerComponent = {
     template: headerTemplate
 }
 
-exports = {headerComponent}
+exports = { headerComponent }
