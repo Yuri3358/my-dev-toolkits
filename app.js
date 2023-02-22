@@ -1,6 +1,7 @@
 const app = Vue.createApp({})
 
 const routes = [
+    {path: "/", component: frameworks},
     {path: "/frameworks", component: frameworks},
     {path: "/styles", component: styleTools},
     {path: "/data", component: dataTools},
