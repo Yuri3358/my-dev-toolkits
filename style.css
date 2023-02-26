@@ -18,7 +18,7 @@ input {
 #form-box {
     background-color: orange;
     margin: auto;
-    width: 10cm;
+    width: 13cm;
     text-align: center;
     border: 1px ridge black;
     box-shadow: 2px 2px 2px black;
@@ -27,16 +27,29 @@ input {
 
 #content-box {
     margin: auto;
+    overflow: auto;
+    width: 320px;
+    height: 270px;
 }
 
 thead {
     background-color: var(--bs-dark);
+    font-size: 24px;
+}
+
+#link {
+    resize: none;
+    height: 100px;
+    width: 380px;
+    font-size: 14px;
+    text-align: center;
 }
 
 .table {
     text-align: center;
     margin: auto;
-    width: 6cm;
+    width: 8cm;
+    font-size: 20px;
 }
 
 .tools {
