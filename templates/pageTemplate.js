@@ -7,19 +7,19 @@ const pageTemplate = `
         <label for="tool">Ferramenta</label>
         <input id="tool" ref="toolInput" v-model="toolName">
 
-        <label for="link">CDN</label>
-        <input id="link" v-model="linkName">
+        <label for="link">CDN</label> <br/>
+        <textarea id="link" v-model="linkName"></textarea> <br/>
         <button class="btn btn-success" @click="registerTool">Salvar</button>
     </div>
 
     <div id="content-box">
         <table class="table table-secondary">
             <thead class="table-dark">
-                <th>Ferramenta</th>
+                <th>Ferramentas</th>
             </thead>
             <tbody>
                 <tr v-for="tool in this.toolkitList.value">
-                    <td @click="copyLink(tool.name)">{{ tool.name }}</td>
+                    <td @click="copyLink(tool.link)">{{ tool.name }}</td>
                 </tr>
             </tbody>
         </table>
