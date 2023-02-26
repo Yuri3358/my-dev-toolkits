@@ -8,11 +8,16 @@ body {
     color: white;
 }
 
+label {
+    font-size: 22px;
+}
+
 input {
     display: flex;
     text-align: center;
     margin: auto;
     margin-bottom: 10px;
+    font-size: 18px;
 }
 
 #form-box {
@@ -43,6 +48,11 @@ thead {
     width: 380px;
     font-size: 14px;
     text-align: center;
+    border: 2px solid black;
+}
+
+.btn {
+    margin-bottom: 8px;
 }
 
 .table {
