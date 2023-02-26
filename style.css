@@ -1,6 +1,31 @@
+body {
+    background-color: darkcyan;
+}
+
 #brand {
     background-color: rgb(73, 129, 234);
     text-align: center;
     color: white;
 }
 
+input {
+    display: flex;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+#form-box {
+    background-color: orange;
+    margin: auto;
+    width: 10cm;
+    text-align: center;
+    border: 1px ridge black;
+    box-shadow: 2px 2px 2px black;
+}
+
+.tools {
+    background-color: rgb(2, 242, 255);
+    width: 3cm;
+    text-align: center;
+}
