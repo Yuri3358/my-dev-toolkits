@@ -9,7 +9,7 @@ const pageTemplate = `
 
         <label for="link">CDN</label> <br/>
         <textarea id="link" v-model="linkName"></textarea> <br/>
-        <button class="btn btn-success" @click="registerTool">Salvar</button>
+        <button class="btn btn-success" @click="registerTool">Salvar Ferramenta</button>
     </div>
 
     <div id="content-box">
