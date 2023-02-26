@@ -3,6 +3,8 @@ const toolkits = {
     data() {
         return {
             toolkitList: Vue.ref([]),
+            toolName: "",
+            linkName: "",
         }
     },
     mounted() {
@@ -18,6 +20,12 @@ const toolkits = {
                     data.push(search)
                 })
                 this.toolkitList.value = data
+            })
+        },
+        async registerTool() {
+            await colRef.add({
+                name: this.toolName,
+                link: this.linkName
             })
         },
         copyLink(tool) {
