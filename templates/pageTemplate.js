@@ -5,7 +5,8 @@ const pageTemplate = `
 
     <div id="form-box" @keyup.enter="registerTool">
         <label for="tool">Ferramenta</label>
-        <input id="tool" v-model="toolName">
+        <input id="tool" ref="toolInput" v-model="toolName">
+
         <label for="link">CDN</label>
         <input id="link" v-model="linkName">
         <button class="btn btn-success" @click="registerTool">Salvar</button>

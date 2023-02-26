@@ -20,6 +20,8 @@ const toolkits = {
                     data.push(search)
                 })
                 this.toolkitList.value = data
+                this.toolName = this.linkName = ""
+                this.$refs.toolInput.focus()
             })
         },
         async registerTool() {
@@ -27,6 +29,7 @@ const toolkits = {
                 name: this.toolName,
                 link: this.linkName
             })
+            this.fetchToolkits()
         },
         copyLink(tool) {
             navigator.clipboard.writeText(tool)
