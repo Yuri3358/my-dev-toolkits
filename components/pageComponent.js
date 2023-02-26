@@ -18,6 +18,7 @@ const toolkits = {
                 snapshot.forEach(doc => {
                     const search = doc.data()
                     data.push(search)
+                    data.sort((a, b) => a.name.localeCompare(b.name))
                 })
                 this.toolkitList.value = data
                 this.toolName = this.linkName = ""
@@ -26,7 +27,7 @@ const toolkits = {
         },
         async registerTool() {
             await colRef.add({
-                name: this.toolName,
+                name: this.toolName.charAt(0).toUpperCase() + this.toolName.slice(1),
                 link: this.linkName
             })
             this.fetchToolkits()
