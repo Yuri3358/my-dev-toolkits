@@ -9,7 +9,7 @@ const toolkits = {
         this.fetchToolkits()
     },
     methods: {
-        fetchToolkits(filter="style") {
+        fetchToolkits(filter="framework") {
             let data = [] 
             colRef.where("type", "==", filter).get()
             .then(snapshot => {
@@ -20,6 +20,9 @@ const toolkits = {
                 this.toolkitList.value = data
                 console.log(this.toolkitList.value)
             })
+        },
+        copyLink(tool) {
+            navigator.clipboard.writeText(tool)
         }
     }
 }
