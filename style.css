@@ -22,10 +22,26 @@ input {
     text-align: center;
     border: 1px ridge black;
     box-shadow: 2px 2px 2px black;
+    margin-bottom: 10px;
+}
+
+#content-box {
+    margin: auto;
+}
+
+thead {
+    background-color: var(--bs-dark);
+}
+
+.table {
+    text-align: center;
+    margin: auto;
+    width: 6cm;
 }
 
 .tools {
     background-color: rgb(2, 242, 255);
-    width: 3cm;
     text-align: center;
+    border: 1px solid black;
+    border-radius: 3px;
 }

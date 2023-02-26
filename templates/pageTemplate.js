@@ -12,9 +12,16 @@ const pageTemplate = `
     </div>
 
     <div id="content-box">
-        <ul v-for="tool in this.toolkitList.value">
-            <p class="tools" @click="copyLink(tool.link)">{{ tool.name }}</p>  
-        </ul>
+        <table class="table table-secondary">
+            <thead class="table-dark">
+                <th>Ferramenta</th>
+            </thead>
+            <tbody>
+                <tr v-for="tool in this.toolkitList.value">
+                    <td @click="copyLink(tool.name)">{{ tool.name }}</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 
 `
