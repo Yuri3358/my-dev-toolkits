@@ -3,17 +3,17 @@ const pageTemplate = `
         <h1>Dev Toolkits</h1>
     </header>
 
-    <div id="form-box">
+    <div id="form-box" @keyup.enter="registerTool">
         <label for="tool">Ferramenta</label>
-        <input id="tool">
+        <input id="tool" v-model="toolName">
         <label for="link">CDN</label>
-        <input id="link">
-        <button class="btn btn-success">Salvar</button>
+        <input id="link" v-model="linkName">
+        <button class="btn btn-success" @click="registerTool">Salvar</button>
     </div>
-    
+
     <div id="content-box">
         <ul v-for="tool in this.toolkitList.value">
-            <li @click="copyLink(tool.link)">{{ tool.name }}</li>  
+            <p class="tools" @click="copyLink(tool.link)">{{ tool.name }}</p>  
         </ul>
     </div>
 
