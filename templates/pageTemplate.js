@@ -19,7 +19,7 @@ const pageTemplate = `
             </thead>
             <tbody>
                 <tr v-for="tool in this.toolkitList.value">
-                    <td @click="copyLink(tool.link)">{{ tool.name }}</td>
+                    <td class="tool-copyarea" @click="copyLink(tool.link)">{{ tool.name }}</td>
                 </tr>
             </tbody>
         </table>

@@ -20,6 +20,10 @@ input {
     font-size: 18px;
 }
 
+.tool-copyarea:active {
+    background-color: #9a9a9c;
+}
+
 #form-box {
     background-color: rgb(230, 151, 4);
     margin: auto;
@@ -28,6 +32,10 @@ input {
     border: 1px ridge black;
     box-shadow: 2px 2px 2px black;
     margin-bottom: 10px;
+}
+
+#tool {
+    border: 2px ridge black;
 }
 
 #content-box {
