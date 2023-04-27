@@ -2,13 +2,24 @@ body {
     background-color: rgb(0, 101, 101);
 }
 
-#brand {
-    background-color: rgb(0, 89, 254);
-    text-align: center;
+header {
+    background-color: rgb(1, 1, 105);
     color: white;
-    float: left;
 }
 
-#current-account {
+#brand {
+    color: white;
+}
+
+#current-account > a{
     float: right;
+    position: relative;
+    bottom: 1.3cm;
+    font-size: 20px;
+    text-decoration: none;
+    color: wheat;
+}
+
+#current-account > a:hover {
+    color: rgb(220, 219, 219);
 }
