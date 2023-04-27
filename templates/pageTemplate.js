@@ -2,9 +2,9 @@ const pageTemplate = /*html*/`
     <div id="form-box" @keyup.enter="registerTool">
         <label class="tools-labels" for="tool">Ferramenta</label>
         <br/>
-        <input id="tool" ref="toolInput" v-model="toolName">
+        <input class="tools-inputs" id="tool" ref="toolInput" v-model="toolName">
         <br/>
-        <label class="tools-labels"for="link">CDN</label>
+        <label class="tools-labels" for="link">CDN</label>
         <br/>
         <textarea id="link" v-model="linkName"></textarea>
         <button class="btn btn-success" @click="registerTool">Salvar Ferramenta</button>
