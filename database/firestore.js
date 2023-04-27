@@ -9,8 +9,8 @@ const firebaseConfig = {
 }
 
 firebase.initializeApp(firebaseConfig)
-
+const autho = firebase.auth()
 const db = firebase.firestore()
-const colRef = db.collection("toolkits")
+const colRef = db.collection("usuarios")
 
-exports = { colRef }
+exports = { colRef, autho }
