@@ -1,8 +1,4 @@
 const pageTemplate = `
-    <header id="brand">
-        <h1>Dev Toolkits</h1>
-    </header>
-
     <div id="form-box" @keyup.enter="registerTool">
         <label for="tool">Ferramenta</label>
         <input id="tool" ref="toolInput" v-model="toolName">
