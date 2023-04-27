@@ -22,6 +22,8 @@ const formComponent = {
             sessionStorage.setItem("userId", userCredentials.user.uid)
             sessionStorage.setItem("userEmail", userCredentials.user.email)
             console.log(sessionStorage.getItem("userId"))
+            window.location.replace("#/tools")
+            window.location.reload()
         }
     }
 }
