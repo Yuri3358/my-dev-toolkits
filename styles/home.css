@@ -6,8 +6,8 @@
     display: flex;
     text-align: center;
     margin: auto;
-    margin-bottom: 10px;
     font-size: 18px;
+    margin-bottom: -20px;
 }
 
 .tool-copyarea:active {
