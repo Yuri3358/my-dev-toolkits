@@ -1,0 +1,14 @@
+body {
+    background-color: rgb(0, 101, 101);
+}
+
+#brand {
+    background-color: rgb(0, 89, 254);
+    text-align: center;
+    color: white;
+    float: left;
+}
+
+#current-account {
+    float: right;
+}

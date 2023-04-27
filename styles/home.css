@@ -1,18 +1,8 @@
-body {
-    background-color: rgb(0, 101, 101);
-}
-
-#brand {
-    background-color: rgb(0, 89, 254);
-    text-align: center;
-    color: white;
-}
-
-label {
+.tools-labels {
     font-size: 22px;
 }
 
-input {
+.tools-inputs {
     display: flex;
     text-align: center;
     margin: auto;
