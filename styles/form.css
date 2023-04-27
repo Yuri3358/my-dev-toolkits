@@ -1,6 +1,6 @@
 #login-container {
     background-color: orange;
-    width: 8cm;
+    width: 11cm;
     text-align: center;
     display: block;
     border: 2px solid black;
@@ -9,13 +9,13 @@
     margin-top: 4px;
 }
 
-.form-inputs {
-    text-align: center;
-    font-size: 18px;
+.form-labels {
+    font-size: 26px;
 }
 
-.form-labels {
-    font-size: 22px;
+.form-inputs {
+    text-align: center;
+    font-size: 24px;
 }
 
 .submits {
@@ -23,4 +23,5 @@
     margin-left: 2px;
     margin-right: 2px;
     margin-top: 5px;
+    font-size: 18px;
 }
