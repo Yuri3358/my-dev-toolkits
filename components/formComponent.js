@@ -1,4 +1,4 @@
-const userLogin = {
+const formComponent = {
     template: formTemplate,
     data() {
         return {
@@ -26,4 +26,4 @@ const userLogin = {
     }
 }
 
-exports = { formTemplate }
+exports = { formComponent }
