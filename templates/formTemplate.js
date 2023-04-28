@@ -1,5 +1,5 @@
 const formTemplate = /*html*/`
-    <div id="login-container">
+    <div id="login-container" @keyup.enter="loginUser">
         <form method="post" onsubmit="return false;">
             <label class="form-labels" for="email-input">Email</label>
             <input class="form-inputs" type="email" v-model="userEmail" required>
