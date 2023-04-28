@@ -25,6 +25,11 @@
     display: block;
 }
 
+.manager-buttons {
+    margin-right: 2px;
+    margin-left: 2px;
+}
+
 #tool {
     border: 2px ridge black;
 }
