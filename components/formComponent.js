@@ -16,12 +16,14 @@ const formComponent = {
                 email: this.userEmail
             })
             await colRef.doc(userCredentials.user.uid).collection("toolskit").add({})
+            this.clearInputs()
         },
         async loginUser() {
             const userCredentials = await autho.signInWithEmailAndPassword(this.userEmail, this.userPassword)
             sessionStorage.setItem("userId", userCredentials.user.uid)
             sessionStorage.setItem("userEmail", userCredentials.user.email)
             console.log(sessionStorage.getItem("userId"))
+            this.clearInputs()  
             window.location.replace("#/tools")
             window.location.reload()
         }
